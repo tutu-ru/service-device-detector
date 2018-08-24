@@ -1,0 +1,17 @@
+{
+  "docker": {
+    "ports": [
+      "14511:80"
+    ]
+  },
+  "unittest": {
+    "disabled": 0
+  },
+  "php-rest-client": {
+    "name": "DeviceDetector",
+    "specification": "api/v1/openapi/index.json",
+    "repo": "tutuswg/libraries-devicedetectorclient",
+    "enabled": true,
+    "only_master": true
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit bootstrap="phpunit.php">
+	
+	<testsuite name='main'>
+		<directory suffix='Test.php'>./lib/</directory>
+	</testsuite>
+	
+	<filter>
+		<blacklist>
+			<directory suffix=".php">./../</directory>
+		</blacklist>
+	</filter>
+	
+</phpunit>

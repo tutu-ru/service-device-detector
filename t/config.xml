@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+	<soa>
+		<client-name>DeviceDetector</client-name>
+	</soa>
+
+	<log>
+		<current-project>DeviceDetector</current-project>
+		<projects>
+			<DeviceDetector>
+				<path>t/logs/</path>
+				<keeper>simple</keeper>
+				<debug_enabled>1</debug_enabled>
+			</DeviceDetector>
+		</projects>
+	</log>
+
+</root>

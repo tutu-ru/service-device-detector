@@ -1,0 +1,27 @@
+{
+    "name": "tutu/services-devicedetector",
+    "license": "proprietary",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "tutu/libraries-soaframework": "^1.9",
+        "tutuswagger/rest-service-tools": "^13.3"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://stash.tutu.ru/rest/composer/latest/"
+        },
+        {
+            "type": "git",
+            "url": "ssh://git@depot.tutu.ru:7999/tutuswg/rest-service-tools.git"
+        }
+    ],
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "RMS\\DeviceDetector\\": "lib",
+            "RMT\\DeviceDetector\\": "t/lib"
+        }
+    }
+}

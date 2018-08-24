@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<amqp>
+		<default-connection>soa-bus</default-connection>
+	</amqp>
+
+	<soa>
+		<default-connection>soa-bus</default-connection>
+		<service-bus>composite</service-bus>
+		<client-name>DeviceDetector</client-name>
+	</soa>
+
+	<log>
+		<current-project>DeviceDetector</current-project>
+		<accumulate-in-runtime>0</accumulate-in-runtime>
+	</log>
+
+	<statsd>
+		<prepend_hostname>1</prepend_hostname>
+	</statsd>
+</root>
