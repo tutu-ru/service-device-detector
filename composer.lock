@@ -1,0 +1,2821 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5c5f2987ae22c98c805cce0983e1a138",
+    "packages": [
+        {
+            "name": "apache/thrift",
+            "version": "0.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apache/thrift.git",
+                "reference": "b2a4d4ae21c789b689dd162deb819665567f481c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apache/thrift/zipball/b2a4d4ae21c789b689dd162deb819665567f481c",
+                "reference": "b2a4d4ae21c789b689dd162deb819665567f481c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.10.0"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Thrift": "lib/php/lib/"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Apache Thrift Developers",
+                    "email": "dev@thrift.apache.org",
+                    "homepage": "http://thrift.apache.org"
+                }
+            ],
+            "description": "Apache Thrift RPC system",
+            "homepage": "http://thrift.apache.org/",
+            "support": {
+                "email": "dev@thrift.apache.org",
+                "issues": "https://issues.apache.org/jira/browse/THRIFT",
+                "source": "https://github.com/apache/thrift/tree/0.10.0"
+            },
+            "time": "2016-12-21T20:36:22+00:00"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "homepage": "https://github.com/container-interop/container-interop",
+            "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/54cacc9b81758b14e3ce750f205a393d52339e97",
+                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2017-02-24T16:22:25+00:00"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/d768d58baee9a4862ca783840eca1b9add7a7f57",
+                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "alcaeus/mongo-php-adapter": "^1.1",
+                "doctrine/coding-standard": "^4.0",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^7.0",
+                "predis/predis": "~1.0"
+            },
+            "suggest": {
+                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Caching library offering an object-oriented API for many cache backends",
+            "homepage": "https://www.doctrine-project.org",
+            "keywords": [
+                "cache",
+                "caching"
+            ],
+            "time": "2018-08-21T18:01:43+00:00"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09T13:34:57+00:00"
+        },
+        {
+            "name": "domnikl/statsd",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/domnikl/statsd-php.git",
+                "reference": "c2208ecd631b3635cb121a8b9047803c0e1b54cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/domnikl/statsd-php/zipball/c2208ecd631b3635cb121a8b9047803c0e1b54cf",
+                "reference": "c2208ecd631b3635cb121a8b9047803c0e1b54cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">= 4.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Domnikl\\Statsd\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dominik Liebler",
+                    "email": "liebler.dominik@gmail.com"
+                }
+            ],
+            "description": "a PHP client for statsd",
+            "homepage": "https://domnikl.github.com/statsd-php",
+            "keywords": [
+                "Metrics",
+                "monitoring",
+                "statistics",
+                "statsd",
+                "udp"
+            ],
+            "time": "2016-04-23T09:29:46+00:00"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2018-04-22T15:46:56+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20T10:07:11+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "ifrolikov/dto",
+            "version": "1.28",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ifrolikov/dto.git",
+                "reference": "9d93f368217c510d514ab11fe6ac38a998652d00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ifrolikov/dto/zipball/9d93f368217c510d514ab11fe6ac38a998652d00",
+                "reference": "9d93f368217c510d514ab11fe6ac38a998652d00",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "php-di/phpdoc-reader": "dev-master",
+                "psr/container": "^1.0@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.3@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ifrolikov\\dto\\": "src/",
+                    "ifrolikov\\dto\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "ifrolikov",
+                    "email": "frolikov.i@yandex.ru"
+                }
+            ],
+            "time": "2018-08-16T08:27:08+00:00"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "5.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "8560d4314577199ba51bf2032f02cd1315587c23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/8560d4314577199ba51bf2032f02cd1315587c23",
+                "reference": "8560d4314577199ba51bf2032f02cd1315587c23",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.1",
+                "json-schema/json-schema-test-suite": "1.2.0",
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JsonSchema\\": "src/JsonSchema/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Prieto Reis",
+                    "email": "bruno.p.reis@gmail.com"
+                },
+                {
+                    "name": "Justin Rainbow",
+                    "email": "justin.rainbow@gmail.com"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Robert Schönthal",
+                    "email": "seroscho@googlemail.com"
+                }
+            ],
+            "description": "A library to validate a json schema.",
+            "homepage": "https://github.com/justinrainbow/json-schema",
+            "keywords": [
+                "json",
+                "schema"
+            ],
+            "time": "2018-02-14T22:26:30+00:00"
+        },
+        {
+            "name": "linkorb/etcd-php",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/linkorb/etcd-php.git",
+                "reference": "9f35a13d12f0825200a3c38b2090748af039a9ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/linkorb/etcd-php/zipball/9f35a13d12f0825200a3c38b2090748af039a9ca",
+                "reference": "9f35a13d12f0825200a3c38b2090748af039a9ca",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3",
+                "php": ">=5.6",
+                "symfony/console": "^2.4 || ^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "bin": [
+                "bin/etcd-php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LinkORB\\Component\\Etcd\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joost Faassen",
+                    "email": "j.faassen@linkorb.com",
+                    "role": "Development"
+                }
+            ],
+            "description": "Etcd client library for PHP",
+            "homepage": "http://www.github.com/linkorb/etcd-php",
+            "keywords": [
+                "api",
+                "configuration",
+                "distributed",
+                "etcd",
+                "php"
+            ],
+            "time": "2018-06-27T14:09:34+00:00"
+        },
+        {
+            "name": "lvht/jaeger",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lvht/jaeger-php.git",
+                "reference": "5f4e5588450e8e6dcafdc06a4993e10b65e64a60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lvht/jaeger-php/zipball/5f4e5588450e8e6dcafdc06a4993e10b65e64a60",
+                "reference": "5f4e5588450e8e6dcafdc06a4993e10b65e64a60",
+                "shasum": ""
+            },
+            "require": {
+                "lvht/jaeger-idl": "^0.9.0",
+                "opentracing/opentracing": "^1.0.0-beta2",
+                "php": "^7"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.3",
+                "mockery/mockery": "^1.0",
+                "php-coveralls/php-coveralls": "^1.0",
+                "phpunit/phpunit": "^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaeger\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "php client for jaeger",
+            "keywords": [
+                "jaeger",
+                "opentracing",
+                "trace"
+            ],
+            "time": "2017-12-03T13:12:39+00:00"
+        },
+        {
+            "name": "lvht/jaeger-idl",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lvht/jaeger-idl.git",
+                "reference": "a460e06f0dcf1fab3918a4172dc3f14ca28a2295"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lvht/jaeger-idl/zipball/a460e06f0dcf1fab3918a4172dc3f14ca28a2295",
+                "reference": "a460e06f0dcf1fab3918a4172dc3f14ca28a2295",
+                "shasum": ""
+            },
+            "require": {
+                "apache/thrift": "^0.10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaeger\\Thrift\\": "./Jaeger/Thrift"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2017-12-03T04:27:12+00:00"
+        },
+        {
+            "name": "mustangostang/spyc",
+            "version": "0.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mustangostang/spyc.git",
+                "reference": "23c35ae854d835f2d7bcc3e3ad743d7e57a8c14d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mustangostang/spyc/zipball/23c35ae854d835f2d7bcc3e3ad743d7e57a8c14d",
+                "reference": "23c35ae854d835f2d7bcc3e3ad743d7e57a8c14d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.3.*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Spyc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mustangostang",
+                    "email": "vlad.andersen@gmail.com"
+                }
+            ],
+            "description": "A simple YAML loader/dumper class for PHP",
+            "homepage": "https://github.com/mustangostang/spyc/",
+            "keywords": [
+                "spyc",
+                "yaml",
+                "yml"
+            ],
+            "time": "2017-02-24T16:06:33+00:00"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35|~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2018-02-13T20:26:39+00:00"
+        },
+        {
+            "name": "opentracing/opentracing",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opentracing/opentracing-php.git",
+                "reference": "ef331f2658df33e46d951316bcc80539ace005fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opentracing/opentracing-php/zipball/ef331f2658df33e46d951316bcc80539ace005fb",
+                "reference": "ef331f2658df33e46d951316bcc80539ace005fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6||^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7.19",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OpenTracing\\": "./src/OpenTracing/"
+                },
+                "files": [
+                    "./src/OpenTracing/Ext/Tags.php",
+                    "./src/OpenTracing/Formats.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "José Carlos Chávez",
+                    "email": "jcchavezs@gmail.com"
+                }
+            ],
+            "description": "OpenTracing API for PHP",
+            "time": "2017-11-15T07:59:22+00:00"
+        },
+        {
+            "name": "php-amqplib/php-amqplib",
+            "version": "v2.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-amqplib/php-amqplib.git",
+                "reference": "fa2f0d4410a11008cb36b379177291be7ee9e4f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/fa2f0d4410a11008cb36b379177291be7ee9e4f6",
+                "reference": "fa2f0d4410a11008cb36b379177291be7ee9e4f6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "replace": {
+                "videlalvaro/php-amqplib": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8",
+                "scrutinizer/ocular": "^1.1",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "suggest": {
+                "ext-sockets": "Use AMQPSocketConnection"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpAmqpLib\\": "PhpAmqpLib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Alvaro Videla",
+                    "role": "Original Maintainer"
+                },
+                {
+                    "name": "John Kelly",
+                    "email": "johnmkelly86@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Raúl Araya",
+                    "email": "nubeiro@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+            "homepage": "https://github.com/php-amqplib/php-amqplib/",
+            "keywords": [
+                "message",
+                "queue",
+                "rabbitmq"
+            ],
+            "time": "2016-04-11T14:30:01+00:00"
+        },
+        {
+            "name": "php-di/phpdoc-reader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI/PhpDocReader.git",
+                "reference": "7d0de60b9341933c8afd172a6255cd7557601e0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI/PhpDocReader/zipball/7d0de60b9341933c8afd172a6255cd7557601e0e",
+                "reference": "7d0de60b9341933c8afd172a6255cd7557601e0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpDocReader\\": "src/PhpDocReader"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PhpDocReader parses @var and @param values in PHP docblocks (supports namespaced class names with the same resolution rules as PHP)",
+            "keywords": [
+                "phpdoc",
+                "reflection"
+            ],
+            "time": "2018-02-18T17:39:01+00:00"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v3.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2018-01-21T07:42:36+00:00"
+        },
+        {
+            "name": "piwik/device-detector",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matomo-org/device-detector.git",
+                "reference": "45878a62a8828bbf4f41122adc15169d7d3ec150"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/45878a62a8828bbf4f41122adc15169d7d3ec150",
+                "reference": "45878a62a8828bbf4f41122adc15169d7d3ec150",
+                "shasum": ""
+            },
+            "require": {
+                "mustangostang/spyc": "*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "~1.7",
+                "matthiasmullie/scrapbook": "@stable",
+                "phpunit/phpunit": "^4.8.36",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "suggest": {
+                "doctrine/cache": "Can directly be used for caching purpose"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DeviceDetector\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "The Matomo Team",
+                    "email": "hello@matomo.org",
+                    "homepage": "https://matomo.org/team/"
+                }
+            ],
+            "description": "The Universal Device Detection library, that parses User Agents and detects devices (desktop, tablet, mobile, tv, cars, console, etc.), clients (browsers, media players, mobile apps, feed readers, libraries, etc), operating systems, devices, brands and models.",
+            "homepage": "https://matomo.org",
+            "keywords": [
+                "devicedetection",
+                "parser",
+                "useragent"
+            ],
+            "time": "2018-02-09T08:41:59+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "7a170b3d8123c556597b4fbdb88631f99de180c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/7a170b3d8123c556597b4fbdb88631f99de180c2",
+                "reference": "7a170b3d8123c556597b4fbdb88631f99de180c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete PHP client library for Redis",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2015-01-02T12:51:34+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10T12:19:37+00:00"
+        },
+        {
+            "name": "raven/raven",
+            "version": "0.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/getsentry/raven-php.git",
+                "reference": "1d5be07afc001df98a3528d1f928eeb2241afce6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/getsentry/raven-php/zipball/1d5be07afc001df98a3528d1f928eeb2241afce6",
+                "reference": "1d5be07afc001df98a3528d1f928eeb2241afce6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.8.0",
+                "phpunit/phpunit": "^4.6.6"
+            },
+            "bin": [
+                "bin/raven"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Raven_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "David Cramer",
+                    "email": "dcramer@gmail.com"
+                }
+            ],
+            "description": "A PHP client for Sentry (http://getsentry.com)",
+            "homepage": "http://getsentry.com",
+            "keywords": [
+                "log",
+                "logging"
+            ],
+            "abandoned": "sentry/sentry",
+            "time": "2015-09-09T18:12:58+00:00"
+        },
+        {
+            "name": "slim/slim",
+            "version": "3.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slimphp/Slim.git",
+                "reference": "4086d0106cf5a7135c69fce4161fe355a8feb118"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/4086d0106cf5a7135c69fce4161fe355a8feb118",
+                "reference": "4086d0106cf5a7135c69fce4161fe355a8feb118",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.2",
+                "nikic/fast-route": "^1.0",
+                "php": ">=5.5.0",
+                "pimple/pimple": "^3.0",
+                "psr/container": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Slim\\": "Slim"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Allen",
+                    "email": "rob@akrabat.com",
+                    "homepage": "http://akrabat.com"
+                },
+                {
+                    "name": "Josh Lockhart",
+                    "email": "hello@joshlockhart.com",
+                    "homepage": "https://joshlockhart.com"
+                },
+                {
+                    "name": "Gabriel Manricks",
+                    "email": "gmanricks@me.com",
+                    "homepage": "http://gabrielmanricks.com"
+                },
+                {
+                    "name": "Andrew Smith",
+                    "email": "a.smith@silentworks.co.uk",
+                    "homepage": "http://silentworks.co.uk"
+                }
+            ],
+            "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs",
+            "homepage": "https://slimframework.com",
+            "keywords": [
+                "api",
+                "framework",
+                "micro",
+                "router"
+            ],
+            "time": "2017-11-26T19:13:09+00:00"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v3.4.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "6b217594552b9323bcdcfc14f8a0ce126e84cd73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/6b217594552b9323bcdcfc14f8a0ce126e84cd73",
+                "reference": "6b217594552b9323bcdcfc14f8a0ce126e84cd73",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8",
+                "symfony/debug": "~2.8|~3.0|~4.0",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<3.4",
+                "symfony/process": "<3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
+                "symfony/lock": "~3.4|~4.0",
+                "symfony/process": "~3.3|~4.0"
+            },
+            "suggest": {
+                "psr/log-implementation": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/lock": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-07-26T11:19:56+00:00"
+        },
+        {
+            "name": "symfony/debug",
+            "version": "v4.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "47ead688f1f2877f3f14219670f52e4722ee7052"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/47ead688f1f2877f3f14219670f52e4722ee7052",
+                "reference": "47ead688f1f2877f3f14219670f52e4722ee7052",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "psr/log": "~1.0"
+            },
+            "conflict": {
+                "symfony/http-kernel": "<3.4"
+            },
+            "require-dev": {
+                "symfony/http-kernel": "~3.4|~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Debug\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Debug Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-08-03T11:13:38+00:00"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v4.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "e162f1df3102d0b7472805a5a9d5db9fcf0a8068"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/e162f1df3102d0b7472805a5a9d5db9fcf0a8068",
+                "reference": "e162f1df3102d0b7472805a5a9d5db9fcf0a8068",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-07-26T11:24:31+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2018-08-06T14:22:27+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/d0cd638f4634c16d8df4508e847f14e9e43168b8",
+                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2018-08-06T14:22:27+00:00"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "v4.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "fa2182669f7983b7aa5f1a770d053f79f0ef144f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/fa2182669f7983b7aa5f1a770d053f79f0ef144f",
+                "reference": "fa2182669f7983b7aa5f1a770d053f79f0ef144f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "symfony/config": "<3.4",
+                "symfony/dependency-injection": "<3.4",
+                "symfony/yaml": "<3.4"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~3.4|~4.0",
+                "symfony/console": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/finder": "~2.8|~3.0|~4.0",
+                "symfony/intl": "~3.4|~4.0",
+                "symfony/yaml": "~3.4|~4.0"
+            },
+            "suggest": {
+                "psr/log-implementation": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Translation Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-08-07T12:45:11+00:00"
+        },
+        {
+            "name": "symfony/validator",
+            "version": "v4.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/validator.git",
+                "reference": "92646dd2c781f2a8926f9bf57a9333a1e5a628c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/92646dd2c781f2a8926f9bf57a9333a1e5a628c5",
+                "reference": "92646dd2c781f2a8926f9bf57a9333a1e5a628c5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/translation": "~3.4|~4.0"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
+                "symfony/dependency-injection": "<3.4",
+                "symfony/http-kernel": "<3.4",
+                "symfony/intl": "<4.1",
+                "symfony/yaml": "<3.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "~1.0",
+                "doctrine/cache": "~1.0",
+                "egulias/email-validator": "^1.2.8|~2.0",
+                "symfony/cache": "~3.4|~4.0",
+                "symfony/config": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/expression-language": "~3.4|~4.0",
+                "symfony/http-foundation": "~4.1",
+                "symfony/http-kernel": "~3.4|~4.0",
+                "symfony/intl": "~4.1",
+                "symfony/property-access": "~3.4|~4.0",
+                "symfony/var-dumper": "~3.4|~4.0",
+                "symfony/yaml": "~3.4|~4.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "For using the annotation mapping. You will also need doctrine/cache.",
+                "doctrine/cache": "For using the default cached annotation reader and metadata cache.",
+                "egulias/email-validator": "Strict (RFC compliant) email validation",
+                "psr/cache-implementation": "For using the metadata cache.",
+                "symfony/config": "",
+                "symfony/expression-language": "For using the Expression validator",
+                "symfony/http-foundation": "",
+                "symfony/intl": "",
+                "symfony/property-access": "For accessing properties within comparison constraints",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Validator\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Validator Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-08-07T09:35:05+00:00"
+        },
+        {
+            "name": "tutu/libraries-amqp",
+            "version": "v35.4",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-amqp.git",
+                "reference": "v35.4"
+            },
+            "require": {
+                "php-amqplib/php-amqplib": "v2.6.3",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-log": "113.*",
+                "tutu/libraries-statsd": "12.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Amqp"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-autoload",
+            "version": "v9.8",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-autoload.git",
+                "reference": "v9.8"
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "6.5.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Tutu\\Composer\\AutoloadPlugin",
+                "tutu/libraries-autoload": {
+                    "name": "Autoload"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tutu\\Composer\\": "composer/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-base",
+            "version": "v99.34",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-base.git",
+                "reference": "v99.34"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-dispatcher": "24.*",
+                "tutu/libraries-test": "123.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Base",
+                    "init": "tools.php"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-cache",
+            "version": "v90.40",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-cache.git",
+                "reference": "v90.40"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-date": "132.*",
+                "tutu/libraries-log": "113.*",
+                "tutu/libraries-statsd": "^12.24",
+                "tutu/libraries-tools": "289.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Cache",
+                    "init": "tools.php"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-config",
+            "version": "v68.21",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-config.git",
+                "reference": "v68.21"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-etcd": "10.*",
+                "tutu/libraries-profiler": "54.*",
+                "tutu/libraries-tools": "289.*",
+                "tutu/libraries-xml": "23.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Config",
+                    "init": "tools.php"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-date",
+            "version": "v132.11",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-date.git",
+                "reference": "v132.11"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Date",
+                    "init": "shortcut.php"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-dispatcher",
+            "version": "v24.5",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-dispatcher.git",
+                "reference": "v24.5"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-test": "123.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Dispatcher",
+                    "init": "tools.php"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-errortracker",
+            "version": "v3.3",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-errortracker.git",
+                "reference": "v3.3"
+            },
+            "require": {
+                "raven/raven": "0.13.0",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-log": "113.*",
+                "tutu/libraries-statsd": "12.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "ErrorTracker"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-etcd",
+            "version": "v10.6",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-etcd.git",
+                "reference": "v10.6"
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3.3",
+                "linkorb/etcd-php": "1.5.0",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Etcd"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-json",
+            "version": "v9.8",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/common/libraries-json.git",
+                "reference": "v9.8"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Json"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-jsonrpc",
+            "version": "v9.4",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-jsonrpc.git",
+                "reference": "v9.4"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-json": "^9.7"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "JsonRpc"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-jsonschema",
+            "version": "v9.3",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-jsonschema.git",
+                "reference": "v9.3"
+            },
+            "require": {
+                "justinrainbow/json-schema": "^5.2.7",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-json": "^9.8"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "JsonSchema"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-log",
+            "version": "v113.25",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-log.git",
+                "reference": "v113.25"
+            },
+            "require": {
+                "psr/log": "^1.0.2",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-date": "132.*",
+                "tutu/libraries-json": "9.*",
+                "tutu/libraries-tools": "289.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Log",
+                    "init": "tools.php"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-logstash",
+            "version": "v23.42",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-logstash.git",
+                "reference": "v23.42"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-json": "9.*",
+                "tutu/libraries-log": "^113.20",
+                "tutu/libraries-redis": "^9.12",
+                "tutu/libraries-statsd": "12.*",
+                "tutu/libraries-tools": "289.*",
+                "tutu/libraries-xrequestid": "^8.11"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "LogStash"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-netzone",
+            "version": "v9.15",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-netzone.git",
+                "reference": "v9.15"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "NetZone"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-opentracing",
+            "version": "v2.7",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-opentracing.git",
+                "reference": "v2.7"
+            },
+            "require": {
+                "lvht/jaeger": "^0.4.0",
+                "opentracing/opentracing": "1.0.0-beta2",
+                "php": "^7.1",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-log": "^113.24",
+                "tutu/libraries-netzone": "9.*",
+                "tutu/libraries-tools": "289.*",
+                "tutu/libraries-xrequestid": "8.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "OpenTracing"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-profiler",
+            "version": "v54.20",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-profiler.git",
+                "reference": "v54.20"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Profiler",
+                    "init": "tools.php"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-profilerrendererstatsd",
+            "version": "v2",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-profilerrendererstatsd.git",
+                "reference": "v2"
+            },
+            "require": {
+                "domnikl/statsd": "2.4.0",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-profiler": "54.*",
+                "tutu/libraries-statsd": "12.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "ProfilerRendererStatsD"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-redis",
+            "version": "v9.16",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-redis.git",
+                "reference": "v9.16"
+            },
+            "require": {
+                "predis/predis": "v1.0.1",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-date": "132.*",
+                "tutu/libraries-profiler": "54.*",
+                "tutu/libraries-statsd": "12.*",
+                "tutu/libraries-tools": "289.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Redis"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-reflection",
+            "version": "v9.1",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-reflection.git",
+                "reference": "v9.1"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Reflection"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-soabus",
+            "version": "v1.32",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/soa/libraries-soabus.git",
+                "reference": "v1.32"
+            },
+            "require": {
+                "php": "^7.1",
+                "tutu/libraries-amqp": "^35.3",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-cache": "^90.17",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-date": "132.*",
+                "tutu/libraries-log": "^113.24",
+                "tutu/libraries-opentracing": "2.*",
+                "tutu/libraries-statsd": "12.*",
+                "tutu/libraries-tools": "289.*",
+                "tutu/libraries-xrequestid": "8.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.0"
+            },
+            "bin": [
+                "bin/soabus-events-report.php"
+            ],
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "SoaBus"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RM\\SoaBus\\": "",
+                    "RMT\\SoaBus\\": "t/lib"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-soaclient",
+            "version": "v1.20",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/soa/libraries-soaclient.git",
+                "reference": "v1.20"
+            },
+            "require": {
+                "php": "^7.1",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-opentracing": "2.*",
+                "tutu/libraries-soabus": "^1.15",
+                "tutu/libraries-soaprotocol": "^1.5",
+                "tutu/libraries-soaspec": "1.*",
+                "tutu/libraries-statsd": "12.*",
+                "tutu/libraries-xrequestid": "8.*"
+            },
+            "require-dev": {
+                "doctrine/instantiator": "1.0.*",
+                "phpunit/phpunit": "5.5.0"
+            },
+            "bin": [
+                "bin/soa-make-client.php"
+            ],
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "SoaClient"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-soaframework",
+            "version": "v1.9",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/soa/libraries-soaframework.git",
+                "reference": "v1.9"
+            },
+            "require": {
+                "php": "^7.1",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-log": "113.*",
+                "tutu/libraries-logstash": "23.*",
+                "tutu/libraries-soaclient": "^1.20",
+                "tutu/libraries-soaservice": "^1.50"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "SoaFramework"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-soaprotocol",
+            "version": "v1.5",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/soa/libraries-soaprotocol.git",
+                "reference": "v1.5"
+            },
+            "require": {
+                "php": "^7.0",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-jsonrpc": "^9.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "SoaProtocol"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-soaservice",
+            "version": "v1.52",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/soa/libraries-soaservice.git",
+                "reference": "v1.52"
+            },
+            "require": {
+                "php": "^7.1",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "^68.17",
+                "tutu/libraries-date": "132.*",
+                "tutu/libraries-errortracker": "3.*",
+                "tutu/libraries-etcd": "^10.4",
+                "tutu/libraries-json": "9.*",
+                "tutu/libraries-log": "^113.24",
+                "tutu/libraries-opentracing": "2.*",
+                "tutu/libraries-profiler": "54.*",
+                "tutu/libraries-profilerrendererstatsd": "2.*",
+                "tutu/libraries-soabus": "^1.30",
+                "tutu/libraries-soaprotocol": "^1.5",
+                "tutu/libraries-soaspec": "^1.16",
+                "tutu/libraries-statsd": "12.*",
+                "tutu/libraries-xrequestid": "8.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.0"
+            },
+            "bin": [
+                "bin/service.php",
+                "bin/service-bootstrap.php"
+            ],
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "SoaService"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-soaspec",
+            "version": "v1.19",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/soa/libraries-soaspec.git",
+                "reference": "v1.19"
+            },
+            "require": {
+                "doctrine/annotations": "1.4.*",
+                "justinrainbow/json-schema": "^5.2.7",
+                "php": "^7.1",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-json": "9.*",
+                "tutu/libraries-jsonschema": "^9.2",
+                "tutu/libraries-reflection": "9.*",
+                "zircote/swagger-php": "2.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "SoaSpec"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RM\\SoaSpec\\": "",
+                    "RMT\\SoaSpec\\": "t/lib"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-statsd",
+            "version": "v12.26",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-statsd.git",
+                "reference": "v12.26"
+            },
+            "require": {
+                "domnikl/statsd": "2.4.0",
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-config": "68.*",
+                "tutu/libraries-log": "113.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "StatsD"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-test",
+            "version": "v123.9",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-test.git",
+                "reference": "v123.9"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Test",
+                    "init": "tools.php"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-tools",
+            "version": "v289.13",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-tools.git",
+                "reference": "v289.13"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Tools"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-xml",
+            "version": "v23.1",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-xml.git",
+                "reference": "v23.1"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "Xml"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutu/libraries-xrequestid",
+            "version": "v8.13",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/system/libraries-xrequestid.git",
+                "reference": "v8.13"
+            },
+            "require": {
+                "tutu/libraries-autoload": "@dev",
+                "tutu/libraries-base": "99.*",
+                "tutu/libraries-json": "^9.8",
+                "tutu/libraries-tools": "289.*"
+            },
+            "type": "library",
+            "extra": {
+                "tutu/libraries-autoload": {
+                    "name": "XRequestId"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RM\\XRequestId\\": "",
+                    "RMT\\XRequestId\\": "t/lib"
+                }
+            },
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "tutuswagger/rest-service-tools",
+            "version": "v13.4",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@depot.tutu.ru:7999/tutuswg/rest-service-tools.git",
+                "reference": "7d8500eec1767acbad066a9b2c975a02f60a4cd1"
+            },
+            "require": {
+                "doctrine/annotations": "^1.4.0",
+                "doctrine/cache": "^1.7",
+                "ifrolikov/dto": "1.*",
+                "slim/slim": "3.9.2",
+                "symfony/validator": "^4.1"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "^1.8",
+                "phpunit/phpunit": "^7.3"
+            },
+            "bin": [
+                "src/generateClient.sh",
+                "src/generateSpec.sh",
+                "src/codegenFix.php"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ApiTools\\Infrastructure\\": "src/",
+                    "ApiTools\\Infrastructure\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "rest service tools",
+            "time": "2018-08-23T15:09:51+00:00"
+        },
+        {
+            "name": "zircote/swagger-php",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zircote/swagger-php.git",
+                "reference": "9f03cbb49eccf77c0bd5fd303fef3afd1c015878"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/9f03cbb49eccf77c0bd5fd303fef3afd1c015878",
+                "reference": "9f03cbb49eccf77c0bd5fd303fef3afd1c015878",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "*",
+                "php": ">=5.4.0",
+                "symfony/finder": "*"
+            },
+            "require-dev": {
+                "zendframework/zend-form": "*"
+            },
+            "bin": [
+                "bin/swagger"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Swagger\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Allen",
+                    "email": "zircote@gmail.com",
+                    "homepage": "http://www.zircote.com"
+                },
+                {
+                    "name": "Bob Fanger",
+                    "email": "bfanger@gmail.com",
+                    "homepage": "http://bfanger.nl"
+                }
+            ],
+            "description": "Swagger-PHP - Generate interactive documentation for your RESTful API using phpdoc annotations",
+            "homepage": "https://github.com/zircote/swagger-php/",
+            "keywords": [
+                "api",
+                "json",
+                "rest",
+                "service discovery"
+            ],
+            "time": "2015-07-04T17:44:27+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "piwik/device-detector": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

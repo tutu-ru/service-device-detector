@@ -1,0 +1,67 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "DeviceDetector API",
+    "title": "API сервиса DeviceDetector",
+    "version": "1.0"
+  },
+  "paths": {
+    "/device_info/": {
+      "get": {
+        "description": "Получение информации об устройстве",
+        "operationId": "getDeviceInfo",
+        "tags": ["rest"],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "userAgent",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "userAgent устройства"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Информация об устройстве",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeviceInfo"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DeviceInfo": {
+        "type": "object",
+        "properties": {
+          "is_mobile": {
+            "type": "boolean"
+          },
+          "is_tablet": {
+            "type": "boolean"
+          },
+          "is_bot": {
+            "type": "boolean"
+          },
+          "os_name": {
+            "type": "string"
+          },
+          "os_version": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

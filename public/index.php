@@ -9,7 +9,16 @@ try
 	require_once(__DIR__ . '/../lib/init.php');
 	fXRequestId()->init();
 
-	echo "Съешь ещё этих мягких французских булок, да выпей же чаю";
+	$settings = require __DIR__ . '/../lib/settings.php';
+	$app = new \Slim\App($settings);
+
+	// Set up dependencies
+	require __DIR__ . '/../lib/dependencies.php';
+	// Register middleware
+	//require __DIR__ . '/../lib/middleware.php';
+	// Register routes
+	require __DIR__ . '/../lib/routes.php';
+	$app->run();
 
 	if (!is_null($traceTitle))
 		fOpenTracing()->in($traceTitle);

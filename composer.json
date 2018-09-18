@@ -4,6 +4,8 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
+        "piwik/device-detector": "dev-master#45878a62a8828bbf4f41122adc15169d7d3ec150",
+        "tutu/libraries-cache": "^90.40",
         "tutu/libraries-soaframework": "^1.9",
         "tutuswagger/rest-service-tools": "^13.3"
     },
@@ -20,8 +22,8 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "RMS\\DeviceDetector\\": "lib",
-            "RMT\\DeviceDetector\\": "t/lib"
+            "RMS\\DeviceDetector\\": "lib/DeviceDetector",
+            "RMST\\DeviceDetector\\": "t/lib"
         }
     }
 }
