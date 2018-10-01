@@ -15,7 +15,7 @@ try
 	// Set up dependencies
 	require __DIR__ . '/../lib/dependencies.php';
 	// Register middleware
-	//require __DIR__ . '/../lib/middleware.php';
+	require __DIR__ . '/../lib/middleware.php';
 	// Register routes
 	require __DIR__ . '/../lib/routes.php';
 	$app->run();
