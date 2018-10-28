@@ -1,7 +1,7 @@
 <?php
 
 return [
-	'settings' => [
-		'displayErrorDetails' => \RMS\DeviceDetector\Config::getShowDetailedErrors()
-	]
+    'settings' => [
+        'displayErrorDetails' => \RMS\DeviceDetector\Config::getShowDetailedErrors()
+    ]
 ];

@@ -10,8 +10,6 @@
 
 use \RMS\DeviceDetector\Middleware\RequestTiming;
 
-
-
 /**
  * Этот middleware должен оставаться последним в файле, т.к. здесь идет замер времени выполнения запроса,
  * а middlewares выполняются от последнего к первому
