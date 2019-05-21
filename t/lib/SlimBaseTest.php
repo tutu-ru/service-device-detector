@@ -21,13 +21,10 @@ abstract class SlimBaseTest extends Test
     protected function _initApp()
     {
         // Use the application settings
-        $settings = require __DIR__ . '/../../lib/settings.php';
+        $settings = require __DIR__ . '/../../lib/di.php';
         // initializing $app variable. It'll be used in included files
         $app = new App($settings);
         $this->_app = $app;
-
-        // Set up dependencies
-        require __DIR__ . '/../../lib/dependencies.php';
 
         // Register middleware
         if ($this->withMiddleware) {

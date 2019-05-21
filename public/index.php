@@ -1,34 +1,24 @@
 <?php
 
+$_SERVER['REAL_START_TIME'] = microtime(true);
 define('ROOT_DIR', dirname(__DIR__));
 require_once __DIR__ . "/../vendor/autoload.php";
-$traceTitle = fTools()->web()->getRequestPath();
 
 try {
     require_once(__DIR__ . '/../lib/init.php');
-    fXRequestId()->init();
 
-    $settings = require __DIR__ . '/../lib/settings.php';
-    $app = new \Slim\App($settings);
+    $di  = require __DIR__ . '/../lib/di.php';
+    $app = new \Slim\App($di);
 
-    // Set up dependencies
-    require __DIR__ . '/../lib/dependencies.php';
     // Register middleware
     require __DIR__ . '/../lib/middleware.php';
     // Register routes
     require __DIR__ . '/../lib/routes.php';
     $app->run();
-
-    if (!is_null($traceTitle)) {
-        fOpenTracing()->in($traceTitle);
-    }
 } catch (\Throwable $e) {
-    rm_log_error('DeviceDetector', 'runtime', "{$e}");
+    fLog()->saveThroughNativeErrorLog($e->__toString(), 'php://stderr', true, "   _/|\_   ");
     fErrorTracker()->send($e);
+    http_response_code(500);
 } finally {
-    if (!is_null($traceTitle)) {
-        fOpenTracing()->out($traceTitle);
-        fOpenTracing()->send();
-    }
     fStatsD()->sendAll();
 }

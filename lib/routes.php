@@ -19,6 +19,6 @@ $app->get(
 $app->get(
     '/device_info/',
     function (Request $request, Response $response, $args) {
-        return $this->controller->getDeviceInfo($request, $response, $args);
+        return $this->get('controller')->getDeviceInfo($request, $response, $args);
     }
 )->setName('getDeviceInfo');

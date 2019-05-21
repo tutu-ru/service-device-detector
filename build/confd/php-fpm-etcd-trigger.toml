@@ -1,0 +1,8 @@
+[template]
+src = "php-fpm-etcd-trigger.tmpl"
+dest = "/tmp/etcd-changes.tmp"
+keys = [
+  "/config-tutu/devicedetector",
+  "/config-tutu/infrastructure",
+]
+reload_cmd = "supervisorctl signal USR2 php-fpm"

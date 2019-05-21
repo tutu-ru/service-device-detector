@@ -5,23 +5,29 @@
 
 namespace RMS\DeviceDetector;
 
+use DeviceDetector\Cache\PSR16Bridge;
 use DeviceDetector\Parser\OperatingSystem;
-use \Slim\Http\Request;
-use \Slim\Http\Response;
+use Psr\SimpleCache\CacheInterface;
+use Slim\Http\Request;
+use Slim\Http\Response;
 
 class Controller
 {
-    private const _DEVICE_DETECTOR_NS = 'device_detector';
+    private const _DEVICE_DETECTOR_NS = 'device_detector_';
 
     /**
      * @var \DeviceDetector\DeviceDetector[]
      */
-    private $_engine = [];
+    private $engine = [];
 
-    /**
-     * @var FileCache
-     */
-    private $_cache;
+    /** @var CacheInterface */
+    private $cache;
+
+
+    public function __construct(CacheInterface $cache)
+    {
+        $this->cache = $cache;
+    }
 
     /**
      * @param Request  $request
@@ -37,35 +43,35 @@ class Controller
         }
 
         $userAgent = $requestParams['userAgent'];
-        $deviceInfo = $this->_getDeviceInfoFromCache($userAgent);
+        $deviceInfo = $this->getDeviceInfoFromCache($userAgent);
         if (is_null($deviceInfo)) {
-            $deviceInfo = $this->_getDeviceInfo($userAgent);
-            $this->_setDeviceInfoToCache($userAgent, $deviceInfo);
+            $deviceInfo = $this->loadDeviceInfo($userAgent);
+            $this->setDeviceInfoToCache($userAgent, $deviceInfo);
         }
 
         return $response->withJson($deviceInfo);
     }
 
-    private function _getDeviceInfoFromCache(string $userAgent): ?array
+    private function getDeviceInfoFromCache(string $userAgent): ?array
     {
-        return rm_shared_memory_cache_get(self::_DEVICE_DETECTOR_NS, $userAgent);
+        return $this->cache->get($this->getCacheKey($userAgent));
     }
 
-    private function _setDeviceInfoToCache(string $userAgent, array $deviceInfo)
+    private function setDeviceInfoToCache(string $userAgent, array $deviceInfo)
     {
-        rm_shared_memory_cache_set(
-            self::_DEVICE_DETECTOR_NS,
-            $userAgent,
-            $deviceInfo,
-            Config::getSharedMemoryTtl()
-        );
+        $this->cache->set($this->getCacheKey($userAgent), $deviceInfo, Config::getSharedMemoryTtl());
+    }
+
+    private function getCacheKey(string $userAgent): string
+    {
+        return self::_DEVICE_DETECTOR_NS . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $userAgent);
     }
 
 
-    protected function _getDeviceInfo($userAgent): array
+    private function loadDeviceInfo($userAgent): array
     {
-        $engine = $this->_getEngine($userAgent);
-        $engineWithSkipBotDetection = $this->_getEngine($userAgent, true);
+        $engine = $this->getEngine($userAgent);
+        $engineWithSkipBotDetection = $this->getEngine($userAgent, true);
         $osData = $engine->getOs();
 
         $result = [
@@ -85,28 +91,16 @@ class Controller
      *
      * @return \DeviceDetector\DeviceDetector
      */
-    protected function _getEngine($userAgent, $skipBotDetection = false)
+    protected function getEngine($userAgent, $skipBotDetection = false)
     {
-        if (!isset($this->_engine[$skipBotDetection])) {
+        if (!isset($this->engine[$skipBotDetection])) {
             $detector = new \DeviceDetector\DeviceDetector($userAgent);
             $detector->skipBotDetection($skipBotDetection);
-            $detector->setCache($this->_getCache());
+            $detector->setCache(new PSR16Bridge($this->cache));
             $detector->parse();
-            $this->_engine[$skipBotDetection] = $detector;
+            $this->engine[$skipBotDetection] = $detector;
         }
 
-        return $this->_engine[$skipBotDetection];
-    }
-
-    /**
-     * @return FileCache
-     */
-    protected function _getCache()
-    {
-        if (is_null($this->_cache)) {
-            $this->_cache = new FileCache();
-        }
-
-        return $this->_cache;
+        return $this->engine[$skipBotDetection];
     }
 }

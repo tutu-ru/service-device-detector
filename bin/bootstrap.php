@@ -1,17 +1,16 @@
 <?php
 
-use RM\SoaFramework\Bootstrap\ConfigBootstrapAtom;
+use RM\ServiceConfig\ConfigBootstrap;
 
 define('ROOT_DIR', dirname(__DIR__));
 require_once __DIR__ . "/../vendor/autoload.php";
 
 try {
-    require_once(__DIR__ . '/../lib/init.php');
-    (new ConfigBootstrapAtom())->run('DeviceDetector');
+    (new ConfigBootstrap(__DIR__ . '/../bootstrap'))->run('DeviceDetector');
 
+    require_once(__DIR__ . '/../lib/init.php');
     // TODO: other bootstraps
 } catch (\Throwable $e) {
-    rm_log_error('DeviceDetector', 'bootstrap', "{$e}");
-    fErrorTracker()->send($e);
+    fLog()->saveThroughNativeErrorLog($e->__toString(), 'php://stderr', true, "   _/|\_   ");
     exit(1);
 }

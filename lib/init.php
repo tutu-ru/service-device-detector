@@ -1,5 +1,12 @@
 <?php
+/** @noinspection PhpUnhandledExceptionInspection */
 
-use RM\SoaFramework\ConfigBuilder;
+use RM\ServiceConfig\ConfigBuilder;
+use RMS\DeviceDetector\SharedMemoryCachePsrBridge;
 
-(new ConfigBuilder())->init('DeviceDetector');
+(new ConfigBuilder())
+    ->setTempDir('tmp/')
+    ->setApplicationConfigFile(__DIR__ . '/../config/application.xml')
+    ->setApplicationConfigCache('/tmp/config.cache')
+    ->setEtcdCache(new SharedMemoryCachePsrBridge("config"), null)
+    ->init('DeviceDetector');
