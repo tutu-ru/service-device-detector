@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "description": "DeviceDetector API",
-    "title": "API сервиса DeviceDetector",
+    "description": "По значению HTTP-заголовка user-agent предоставляет структурированную информацию о клиенте и определяет реальный ли это пользователь или бот",
+    "title": "Сервис определения типа устройства/клиента",
     "version": "1.0"
   },
   "paths": {
