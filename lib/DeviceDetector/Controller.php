@@ -38,7 +38,7 @@ class Controller
     public function getDeviceInfo(Request $request, Response $response, array $args)
     {
         $requestParams = $request->getParams();
-        if (!isset($requestParams['userAgent']) || !$requestParams['userAgent']) {
+        if (!isset($requestParams['userAgent']) || strlen($requestParams['userAgent']) === 0) {
             return $response->withStatus(400, 'Bad request');
         }
 
@@ -74,11 +74,16 @@ class Controller
         $engineWithSkipBotDetection = $this->getEngine($userAgent, true);
         $osData = $engine->getOs();
 
+        $osName = OperatingSystem::getOsFamily((string) $osData['short_name']);
+        if ($osName == null) {
+            $osName = false;
+        }
+
         $result = [
             'is_mobile' => $engineWithSkipBotDetection->isMobile(),
             'is_tablet' => $engineWithSkipBotDetection->isTablet(),
             'is_bot' => $engine->isBot(),
-            'os_name' => OperatingSystem::getOsFamily($osData['short_name']),
+            'os_name' => $osName,
             'os_version' => $osData['version']
         ];
 

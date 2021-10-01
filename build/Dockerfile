@@ -1,4 +1,4 @@
-FROM registry.ci.tutu.ru/services/base-php71-rest:latest
+FROM registry.ci.tutu.ru/services/base-php72-rest:latest
 
 ADD ./build/nginx/nginx.app.conf /etc/nginx/conf.d/app.conf
 ADD ./build/php/php.app.ini /etc/php.d/99-app.ini

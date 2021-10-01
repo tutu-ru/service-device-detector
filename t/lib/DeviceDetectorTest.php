@@ -46,6 +46,10 @@ class DeviceDetectorTest extends SlimBaseTest
                 '',
                 400
             ],
+            [
+                '0',
+                200
+            ],
             //bots
             [
                 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)',

@@ -6,7 +6,7 @@
     "require": {
         "tutu/libraries-autoload": "@dev",
         "tutu/libraries-base": "^99.34",
-        "piwik/device-detector": "dev-master#45878a62a8828bbf4f41122adc15169d7d3ec150",
+        "matomo/device-detector": "v4.3.1",
         "tutu/libraries-cache": "^90.40",
         "tutu/libraries-config": "^68.22",
         "tutu/libraries-errortracker": "^3.3",
